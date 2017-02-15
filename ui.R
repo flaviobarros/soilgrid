@@ -49,7 +49,7 @@ ui <- fluidPage (
                    value = 1),
           
           ## Segunda aba
-          tabPanel("Download",
+          tabPanel("Consulta",
                    tableOutput('filtrado'),
                    downloadButton('downloadData', 'Download')
                    )

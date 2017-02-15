@@ -2,9 +2,9 @@
 #save(datasource, 'datasource.rda')
 
 ## Carregando todos os pacotes necessários
-library(maptools)
-library(foreign)
-library(rgeos)
+if (!require("maptools")) install.packages("maptools")
+if (!require("foreign")) install.packages("foreign")
+if (!require("rgeos")) install.packages("rgeos")
 
 ## Carregando o arquivo fonte que será filtrado
 load("data/datasource.rda")
