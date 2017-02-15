@@ -2,6 +2,13 @@
 
 server <- function(input,output) {
   
+  # Simulate work being done for 1 second
+  Sys.sleep(1)
+  
+  # Hide the loading message when the rest of the server function has executed
+  hide(id = "loading-content", anim = TRUE, animType = "fade")    
+  show("app-content")
+  
   ################## Lendo o conjunto de dados para uso posterior
   Data <- reactive({
     
